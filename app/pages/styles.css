@@ -1,0 +1,114 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: url('../styles/image4.png') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+}
+
+.quiz-container {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.question-section {
+  margin-bottom: 30px;
+}
+
+.question-count {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.question-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.answer-section button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.answer-section button:hover {
+  background-color: #357abd;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.answer-section button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.score-section {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.score-section span {
+  color: #333;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
